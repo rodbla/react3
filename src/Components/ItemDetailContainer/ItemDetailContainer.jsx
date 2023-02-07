@@ -5,13 +5,13 @@ import ItemDetail from "../ItemDetail/ItemDetail"
 const ItemDetailContainer = () => {
   const { idProducto } = useParams()
   console.log(idProducto)
-  // mocks con id 
+
   return (
     <div 
-      // className="border border-5 border-danger  m-3"
+
     >
      
-      <ItemDetail />
+      {/* <ItemDetail data={idProducto}/> */}
     </div>
   )
 }
