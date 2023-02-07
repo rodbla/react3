@@ -5,8 +5,6 @@ import ItemListContainer from './Components/ItemListContainer/ItemListContainer'
 import ItemCount from './Components/ItemCount/ItemCount'
 import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailContainer'
 import CartContainer from './Components/CartContainer/CartContainer'
-// import 'bootstrap/dist/css/bootstrap.min.css'
-
 // import './App.css'
 
 

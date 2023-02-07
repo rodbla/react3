@@ -8,13 +8,11 @@ const NavBar = () => {
   return (
     <Navbar fixed="top" collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
-        {/* <Navbar.Brand href="#home">E-commerce</Navbar.Brand> */}
+
         <Link to='/'>E-commerce</Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            {/* <Nav.Link href="#indumentaria">Indumentaria</Nav.Link>
-            <Nav.Link href="#tecnologia">Tecnologia</Nav.Link> */}
             <NavLink as={Link} to='/categoria/gorras' className={({ isActive })=> isActive  ? 'btn btn-primary':'btn btn-outline-primary' } >Gorras</NavLink>
             <NavLink as={Link} to='/categoria/remeras' className={({ isActive })=> isActive  ? 'btn btn-primary':'btn btn-outline-primary' } >Remeras</NavLink>
             
@@ -31,12 +29,8 @@ const NavBar = () => {
                 Desloguearse
               </NavDropdown.Item>
             </NavDropdown>
-            {/* <Nav.Link className='d-flex' href="#deets">🛒</Nav.Link> */}
-            {/* <Nav.Link eventKey={2} href="#memes">
-              Dank memes
-            </Nav.Link> */}
+
             <Link to='/cart'>CartWidget</Link>
-            {/* <CartWidget /> */}
           </Nav>
         </Navbar.Collapse>
       </Container>
