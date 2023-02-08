@@ -41,7 +41,8 @@ export const ItemListContainer = ({ saludo }) => {
                 <div style={{
                     display: 'flex',
                     flexDirection: 'row',
-                    flexWrap: 'wrap'
+                    flexWrap: 'wrap',
+                    padding: 40
                 }} >
                     <ItemList productos={productos} />                    
                 </div>
