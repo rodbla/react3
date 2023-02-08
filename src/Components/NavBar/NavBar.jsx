@@ -13,8 +13,8 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <NavLink as={Link} to='/categoria/gorras' className={({ isActive })=> isActive  ? 'btn btn-primary':'btn btn-outline-primary' } >Gorras</NavLink>
-            <NavLink as={Link} to='/categoria/remeras' className={({ isActive })=> isActive  ? 'btn btn-primary':'btn btn-outline-primary' } >Remeras</NavLink>
+            <NavLink as={Link} to='/categoria/pelotas' className={({ isActive })=> isActive  ? 'btn btn-primary':'btn btn-outline-primary' } >Pelotas</NavLink>
+            <NavLink as={Link} to='/categoria/zapatillas' className={({ isActive })=> isActive  ? 'btn btn-primary':'btn btn-outline-primary' } >Zapatillas</NavLink>
             
           </Nav>
           <Nav className='align-items-center'>
