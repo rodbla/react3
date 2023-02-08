@@ -57,3 +57,11 @@ export const gFetch = () => {
     }, 1000);
   });
 };
+
+export const gFetchOne = (id) => {
+  return new Promise((res, rej) => {
+    setTimeout(() => {
+      res(productos.find((producto) => producto.id === id));
+    }, 1000);
+  });
+};

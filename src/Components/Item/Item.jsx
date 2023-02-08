@@ -1,16 +1,8 @@
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom"
 
-
-
-const Item = ( { productos } ) =>{
-
-    
-
-    return (
-            <>
-
-                { productos.map(producto =>   (
-                <div key={producto.id} className='card w-25 mt-2' >
+const Item = ({producto}) => {
+  return (
+    <div className='card w-25 mt-2' >
                   <Link to={`/detalle/${producto.id}`}>
                     <div className='card-header'>
                       Nombre: {producto.name}
@@ -21,19 +13,12 @@ const Item = ( { productos } ) =>{
                       Precio: {producto.price}
                     </div>
                     <div className='card-footer'>
+                        {/* <button className="btn btn-outline-primary w-100">Detalle</button> */}
                     </div>
                   </Link>
 
                 </div>
-              )
-            )}
-
-
-            </>
-                  
-        
-    ) 
+  )
 }
 
-
-export default Item;
+export default Item

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { Link, useParams } from "react-router-dom"
 import { gFetch } from "../../utils/gFetch"
-import ItemList from "..//ItemList/ItemList";
+import ItemList from "../ItemList/ItemList"
 
 
 export const ItemListContainer = ({ saludo }) => {
@@ -32,49 +32,20 @@ export const ItemListContainer = ({ saludo }) => {
   }, [idCategoria])
 
  
-
-
-  console.log(idCategoria)
-
   return (
-    
-         loading 
-          ? 
-            <h2>Cargando...</h2> 
-          : 
-          <div style={{
-            display: 'flex',
-            flexDirection: 'row',
-            flexWrap: 'wrap',
-            padding: 50
-          }} >
-           { productos.map(producto =>   (
-                <div key={producto.id} className='card w-25 mt-2' >
-                  <Link to={`/detalle/${producto.id}`}>
-                    <div className='card-header'>
-                      Nombre: {producto.name}
-                    </div>
-                    <div className='card-body'>
-                      <img src={producto.foto} alt='foto' className="w-100"/>
-                      Categoria: {producto.categoria}<br/>
-                      Precio: {producto.price}
-                    </div>
-                    <div className='card-footer'>
-                    </div>
-                  </Link>
-
-
+        
+            loading 
+            ? 
+                <h2>Cargando...</h2> 
+            : 
+                <div style={{
+                    display: 'flex',
+                    flexDirection: 'row',
+                    flexWrap: 'wrap'
+                }} >
+                    <ItemList productos={productos} />                    
                 </div>
-              )
-            )}
-{/* 
-            <ItemList data={productos} /> */}
-            </div>
-
-            
-
-          
-
   )
 }
+
 export default ItemListContainer
